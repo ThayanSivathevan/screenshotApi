@@ -46,6 +46,7 @@ try{
   await browser.close();
 }
 catch(e){
+	console.log(e)
 	res.status(422).send({"message":"Could not screenshot"})
 	
 }
