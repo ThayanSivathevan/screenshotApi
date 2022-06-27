@@ -12,6 +12,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "jquery": "^3.6.0",
-    "puppeteer": "^13.4.1"
+    "puppeteer": "^15.1.1"
   }
 }
