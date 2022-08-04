@@ -8,12 +8,11 @@ app.get("/screenshot", async (req, res) => {
     console.log("recieved");
     const browser = await puppeteer.launch({
       'args': [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-gpu',
-        '--disable-dev-shm-usage',
-        '--proxy-server="direct://"',
-        '--proxy-bypass-list=*'
+     '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--single-process',
+      '--disable-gpu'
       ]
     });
     const page = await browser.newPage();
